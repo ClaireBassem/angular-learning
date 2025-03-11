@@ -1,7 +1,7 @@
 import { Component ,Input, Output, EventEmitter} from '@angular/core';
 import { wishItem } from '../../shared/models/wishItem';
 import { CommonModule } from '@angular/common'; // Import CommonModule
-import {EventService} from './../../shared/services/EventService'
+import {EventService} from '../../shared/services/EventService'
 
 @Component({
   selector: 'app-wish-list-item',

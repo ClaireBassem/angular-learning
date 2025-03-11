@@ -1,4 +1,4 @@
-<div *ngIf="wishes.length == 0; else showItems">
+<div *ngIf="wishes?.length === 0; else showItems">
     there are no items to display
   </div>
   <ng-template #showItems>

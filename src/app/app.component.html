@@ -1,16 +1,1 @@
-<div class="container">
-  <app-add-eish-form (addWish)="items.push($event)"></app-add-eish-form>
-
-  <div class="col-sm-2">
-    <select class="form-select" [(ngModel)]="ListFilter">
-      <option value="0">All</option>
-      <option value="1">Unfullfilled Wishes</option>
-      <option value="2">Fulfilled Wishes</option>
-
-    </select>
-
-  </div>
-<div class="col-sm-3">
-  <app-wish-list [wishes]="visibleItems"></app-wish-list>
-</div>
-</div>
+<app-wish></app-wish>
