@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 import { FormControl, ReactiveFormsModule, FormGroup, Validators} from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, MatSlideToggleModule, MatInputModule, MatSelectModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
