@@ -10,6 +10,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {FlexLayoutModule } from '@angular/flex-layout';
 import { MatGridListModule} from '@angular/material/grid-list';
 import {MatPaginatorModule} from '@angular/material/paginator';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -23,7 +24,8 @@ import {MatPaginatorModule} from '@angular/material/paginator';
      MatIconModule,
      FlexLayoutModule,
      MatGridListModule,
-     MatPaginatorModule],
+     MatPaginatorModule,
+     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

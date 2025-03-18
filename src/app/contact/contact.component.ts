@@ -4,7 +4,9 @@ import { CommonModule } from '@angular/common';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import { createInvalidDomainValidator} from './invalidEmailDomain'
 
+const invalidEmailDomain = createInvalidDomainValidator(['gmail.com', 'outlook.com']);
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -16,7 +18,7 @@ export class ContactComponent {
 
   contactForm = new FormGroup({
     senderName: new FormControl('', Validators.required),
-    senderEmail: new FormControl('', [Validators.required, Validators.email]),
+    senderEmail: new FormControl('', [Validators.required, Validators.email, invalidEmailDomain]),
     senderMessage: new FormControl('', [Validators.required, Validators.minLength(10)])
   })
  
